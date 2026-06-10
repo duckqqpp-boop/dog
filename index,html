@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏠 우리집 홈캠</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+
+    <button id="endBtn">종료</button>
+
+    <h1>🏠 우리집 홈캠</h1>
+
+    <p class="counter">
+      관찰한 장면 : <span id="dogCount">0</span>회
+    </p>
+
+    <div class="image-box-container">
+
+      <div class="image-box" id="imageBox">
+
+        <img id="dogImage" alt="강아지 사진">
+
+        <!-- 홈캠 오버레이 -->
+        <div class="camera-overlay">
+
+          <div class="top-info">
+
+            <div>
+              <div class="live-row">
+                <span class="rec-dot"></span>
+                REC
+              </div>
+
+              <div id="cameraName">
+                CAM-01 거실
+              </div>
+            </div>
+
+            <div class="status-icons">
+              🔋100%<br>
+              📶 Wi-Fi
+            </div>
+
+          </div>
+
+          <!-- 시계 -->
+          <div class="camera-bottom">
+            <div id="currentDate"></div>
+            <div id="currentTime"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 다운로드 버튼 -->
+      <button id="downloadBtn" class="circle-btn">
+        💾
+      </button>
+
+      <!-- 저장 버튼 -->
+      <button id="likeBtn" class="circle-btn">
+        📸
+      </button>
+
+    </div>
+
+    <p id="loading">
+      📡 카메라 연결 중...
+    </p>
+
+    <div class="bottom-btn-group" id="mainControls">
+
+      <button id="newDogBtn">
+        📷 카메라 전환
+      </button>
+
+      <button id="slideBtn">
+        ▶️
+      </button>
+
+    </div>
+
+    <button id="resetBtn">
+      🔄 다시 시작
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
